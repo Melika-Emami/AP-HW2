@@ -1,0 +1,18 @@
+#include<string>
+
+class Queue{
+private:
+  size_t N{};
+  //double *arr=new double [N];  
+  double *arr;
+  double * read;
+  double * write;
+  bool flag_empty{false};
+  bool flag_full{false};
+public:
+  Queue(std::string);
+  void displayQueue(void);
+  void enQueue(double);
+  double deQueue(void);
+  ~Queue();
+};
